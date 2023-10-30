@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH FOR OF BY PEOPLE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+<style>
+        .hidden {
+      display: none;
+    }
+
+    #toggleButton {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      position: fixed;
+      top: 20px; /* Adjust the top and right values as needed */
+      right: 20px;
+    }
+
+    #toggleButton.active {
+      background-color: #e74c3c;
+    }
+    .gap-between{
+        color:blue;
+        font-size:30px;
+        padding:20px;
+    }
+  @media(min-width:1280px){
+    .All-content-div{
+        background-color:black;
+     width:100%;
+    }
+    .background-2{
+        margin-left:130px;
+        margin-right:130px;
+background-color: black;
+}
+}
+
+    p{
+        color: rgb(145, 145, 145);
+        font-family: Lato, arial, sans-serif;
+        font-size: 16px;
+        text-align: left;
+    }
+    img{
+        max-width: 100%;
+    }
+    body{
+        max-width: 100%;
+        height: auto;
+    }
+    .whatsapp-details{
+        text-align: center;
+    }
+            .whatsapp-link {
+                box-sizing: inherit;
+            display: inline-block;
+            background-color: #25D366; /* WhatsApp green */
+            color: #fff; /* Text color */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }body
+
+        .whatsapp-link i {
+            margin-right: 10px;
+        }
+    .nav-item{
+    margin-right:250px
+    }
+    .nav-item-dropdown{
+    padding-top: 30px;
+    }
+.x .c1-r {
+    position: relative;
+}
+.backgroung-body-1{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.navbar-light .navbar-brand {
+    font-size: 16px;
+    font-family: Lato, arial, sans-serif;
+    color: #f9fafb;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #f9fafb;
+}
+.Welcome-div{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+  
+}
+.welcome-title{
+    color: rgb(247, 247, 247);
+    font-size: 62px !important;
+    font-weight: 700;
+    white-space: pre-line;
+    margin: 0px;
+}
+.contact-btn{
+    color: rgb(215, 223, 157);
+    border: 2px solid rgb(215, 223, 157);
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    width: fit-content;
+    text-decoration: none;
+}
+.submit-button:hover{
+    background-color:rgb(215, 223, 157) ;
+    color:black;
+}
+.contact-btn:hover{
+    background-color:rgb(215, 223, 157) ;
+    color:black;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   width: 80%;
+   height: 80%;
+   row-gap: 20px;
+   border-left:2px solid rgba(247, 247, 247, 0.5);
+   padding-left: 32px;
+}
+.About-details{
+    font-family: 'Cabin', arial, sans-serif;
+    margin-left: 24px;
+    align-items: flex-start;
+    width: 100%;
+   flex-direction: column;
+    padding-top:20px;
+    background-color:black;
+}
+h4,h2{
+    font-family: 'Cabin', arial, sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+}
+.about-us-info{
+    color: rgb(226, 226, 226);
+    font-weight: 800;
+    font-family: 'Cabin', arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: center;
+    text-align: 
+  
+}
+.paragraph-0{
+    column-gap:25px;
+    display: flex;
+}
+.paragraph-01{
+    width:50%;
+    align-content: space-between;
+    
+}
+.paragraph-02{
+   display:flex;
+   flex-direction:column;
+   row-gap:15px;
+    width:50%;
+    align-content: space-between;
+}
+.paragraph-03{
+    row-gap: 15px;
+    flex-direction: column;
+    display: flex;
+    column-gap: 25px;
+width:50%
+}
+span,li,h2,hr,p{
+    color: rgb(145, 145, 145);
+
+}
+h4{
+color: rgb(226, 226, 226);
+}
+.Subscribe-details{
+    font-family: 'Cabin', arial, sans-serif;
+    padding-top:50px;
+    padding-left:40%;
+}
+.Subscribe-heading{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Cabin', arial, sans-serif;
+    font-size:42px;
+}
+.input-details{
+    border-color: #f8f9fa;
+    color:white;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    width: 500px;
+}
+.subscribe-form {    
+    font-weight: 400;
+    row-gap: 25px;
+    flex-direction: column;
+    display: flex;
+    padding-top:50px;
+    font-family: 'Cabin', arial, sans-serif;
+            text-align: center;
+        }
+        .error-message {
+            color: red;
+        }
+.input-details{
+    max-width:100%;
+}
+.client-details{
+    padding-top:30px;
+   font-size:15px;
+   font-family:Arial, Helvetica, sans-serif;
+}
+.Client-image{
+    width:95%;
+    margin-bottom:5%;
+}
+.client-review-2{
+    display: flex;
+}
+.review-01{
+    width:50%;
+}
+.client-review-3{
+    padding-top:30px;
+    width:50%;
+}
+
+
+    video{
+        width:100%;
+        height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index:-1 ;
+        }
+        .lets-get-start-details{
+            text-align: center;
+        }
+
+        .main-block{
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            
+
+        }
+    .welcome-title{
+        font-family: Lato, arial, sans-serif;
+    }
+
+h4{
+    font-family: Lato, arial, sans-serif;
+}
+.bottom-latstag{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(145, 145, 145);
+    text-align: center;
+    font-family: Lato, arial, sans-serif;
+}
+.contact-us{
+    text-align: start;
+    font-family: Lato, arial, sans-serif;
+}
+.last-div{
+    padding-top:25px;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 850px; 
+    margin-top: 0.125rem;
+}
+.heading{
+    text-align: center;
+    font-weight: 400;
+    color: rgb(226, 226, 226);
+    overflow-wrap: break-word;
+}
+.personal-details{
+
+    font-family: Lato, arial, sans-serif;
+    color: rgb(215, 223, 157);
+    display: inline;
+    font-weight: inherit;
+    cursor: pointer;
+    white-space: pre-line;
+    background-color: transparent;
+    white-space: pre-line;
+    text-align: center;
+    
+}
+a:link { 
+    color: rgb(226, 226, 226);
+    text-decoration: none; 
+}
+.google-map {
+    background-color: black;
+     position: relative;
+}
+
+.google-map iframe {
+    text-align: start;
+     height: 400px;
+     width: 100%;
+     left: 0;
+     top: 0;
+}
+.about-who-weare{
+    letter-spacing: 0.063em;
+    font-family: Lato, arial, sans-serif;
+    box-sizing: inherit;
+    text-align: center;
+    background: black;
+    width: 100%;
+    height: 100px;
+}
+.omini-buddies{
+    font-family: Lato, arial, sans-serif;
+    color: rgb(226, 226, 226);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+   
+}
+.review-01{
+margin-left:30px;
+}
+.copy-right{
+    text-align: center;
+    font-size: 12px;
+    font-family: Lato, arial, sans-serif;
+    color: rgb(226, 226, 226);
+}
+.sign-up-form{
+    font-size:16px;
+    text-align: center;
+}
+a{
+    color: #d6d9df;
+}
+.submit-button{
+    font-weight: 400;
+    color: rgb(215, 223, 157);
+    border: 2px solid rgb(215, 223, 157);
+    width:150px;
+    height:50px;
+    background-color: black;
+    border-color: #fff;
+    border-radius: 5px;
+}
+@media(max-width:550px){
+    .submit-button {
+        color:white;
+width:300px;
+height:50px;
+background-color: black;
+    border-color: #fff;
+    border-radius: 5px;
+}
+.input-details{
+    border-color: #d9cbcba1;
+    color:white;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    width: 300px;
+}
+}
+ @media(max-width:768px){
+      .input-details{
+    border-color: #d9cbcba1;
+    color:white;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    width: 300px;
+}
+.paragraph-0{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.paragraph-01{
+    width: 100%;
+}
+.paragraph-02{
+width: 100%;
+}
+.client-review-2{
+    display:flex;
+    flex-direction: column;
+}
+.review-01{
+    width: 100%;
+}
+.background-2{
+    background-color:black;
+padding: 0px 24px;
+}
+ }  
+
+ @media (max-width: 880px){
+    .welcome-title{
+        max-width: 100%;
+        font-size: 37px !important;
+    overflow-wrap: break-word;
+ }
+ .google-map {
+    background-color: black;
+     position: relative;
+}
+
+.google-map iframe {
+    text-align: start;
+     height: 400px;
+     width: 100%;
+     left: 0;
+     top: 0;
+}
+.paragraph-02{
+    margin-top:20px;
+}
+.review-01{
+margin-left:0px;
+}
+.client-review-3 {
+    width:100%;
+}
+.paragraph-03 {
+    width:100%;
+}
+.About-details{
+    flex-direction: column;
+    font-size: 16px;
+    margin-left: -10px;
+}
+.paragraph-01{
+margin-left:-10px;
+}
+.All-content-div{
+     width:100%;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="main-block">
+        <div class="bg-video-width">
+            
+    <div class="container">
+        <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-b c1-c c1-12 c1-d c1-e c1-f c1-g">
+            <video data-aid="HEADER_VIDEO" type="video/mp4" poster="https://img1.wsimg.com/isteam/videos/ka58Zo1" autoplay="" loop="" muted="" playsinline="" 
+            style="width:100%;display:block;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);height:auto;min-height:100%;object-fit:cover" 
+            src="https://categories.api.godaddy.com/v4/videos/raw/video/ka58Zo1"></video>
+        <nav class="navbar navbar-expand-lg navbar-light backgroung-body-1">
+            <a class="navbar-brand" href="#">TECH FOR OF BY PEOPLE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <img src="https://img1.wsimg.com/isteam/ip/ab77ab73-4824-4dd4-969e-51446b26185f/blob-19ecfc7.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:95" > </li>
+                    <li class="nav-item-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="peopleTechFocusDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            360° PEOPLE-TECH FOCUS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="peopleTechFocusDropdown">
+                            <a class="dropdown-item" href="whoweare.html">WHO WE ARE</a>
+                            <a class="dropdown-item" href="#">PRODUCTS -FOR THE PEOPLE</a>
+                            <a class="dropdown-item" href="#">SERVICES-OF THE PEOPLE</a>
+                            <a class="dropdown-item" href="#">THE PEOPLE @ OMNIBUDDIES</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+   
+</div>
+</div>
+
+<div class="Welcome-div">
+    <div class="contact-details">
+    <h3 class="welcome-title">WELCOME TO OMNIBUDDIES INNOVATION</h3>
+<a class="contact-btn" href="tel:+918050003793">Contact Us</a>
+    </div>
+</div>
+</div>
+</div>
+<div class="All-content-div">
+<div class="background-2">
+    <div>
+    <div class="About-details">
+    <span class="about-us-info">ABOUT US</span>
+    <hr>
+    <div class="paragraph-0">
+           
+        <div class="paragraph-01">
+         <img src="https://img1.wsimg.com/isteam/stock/12141/:/rs=w:600,h:300,cg:true,m/cr=w:600,h:300"> 
+         </div>
+         <div class="paragraph-02">
+        <h4 class="paragraph">Our Innovations</h4> 
+        <p style="margin:0">
+        <span>
+            We are not the mundane, run of the mill technology enthusiasts. We are driven by a desire to bring new possibilities, new solutions to the problem facing the world. You will see that in our products ,certainly. You will see that in the niche, limited services that we take for a select set of clients. 
+        </span>
+    </p>
+
+    <p style="margin:0"><span>Our Services & Products areas include :</span></p>
+<ul>
+    <li>Technology Solutions for Environmental Betterment & Climate Change Containment</li>
+    <li>Technology Solution for bringing Unprecedented Safety & security privileges to general masses</li>
+    <li>Democratized ease of living solution using technology for general masses</li>
+    <li>Solving Unique problems for our clients in ways that were beyond obvious</li>
+</ul>
+</div>
+    </div>
+<div class="paragraph-03">
+        <h4>Our Customer Service</h4>
+
+ 
+        <span>We are small now and that makes us closer to each of our customers. Do reach out to us on phone or mail if at all we were not the first one to reach you for any issues</span>
+    
+    <h4>Why Us?</h4>
+    
+    
+        <span>We are a team of technology innovators and curious disruptors who are bent on making life better, finding solutions for every issues we face</span>
+    
+    
+        <span>
+            We come with varied experience of solving problems & creation solution for our clients , many among Fortune 500, and also unique technology products in Edtech field , many which are awaiting patent award. 
+        </span>
+    
+</div>
+<div class="subscribe-form">
+    <h2 class="Subscribe-heading">Subscribe</h2>
+    <p class="sign-up-form">Sign up to hear from us.</p>
+    <form id="subscription-form">
+        <label for="email">
+        <input class="input-details" value="Email " type="email" id="email" name="email" required>
+        <span class="error-message" id="email-error"></span>
+        <button class="submit-button"  type="submit" id="subscribe-button">Sign Up</button>
+    </label>
+    </form>
+</div>
+<div class="client-details">
+    <h4>CLIENT REVIEWS</h4>
+    <hr>
+    <img class="Client-image" src="https://img1.wsimg.com/isteam/stock/12141/:/rs=w:1240,h:620,cg:true,m/cr=w:1240,h:620">
+</div>
+<div>
+    <h4 class="client-review ">
+        Griffin Hall, New York, New York
+    </h4>
+    <p>
+        “I needed marketing collateral for my web security clients. I highly recommend these guys. Their friendliness and result-driven approach is what I love about them.” 
+    </p>
+</div>
+<div class="client-review-2">
+    <img src="https://img1.wsimg.com/isteam/stock/12338/:/rs=w:600,h:300,cg:true,m/cr=w:600,h:300">
+    <div class="review-01">
+    <h4>Suzanne Sher, Albany, New York</h4>
+    <p style="margin:0">
+        <p>
+            We come with varied experience of solving problems & creation solution for our clients , many among Fortune 500, and also unique technology products in Edtech field , many which are awaiting patent award. 
+        </p>
+    </p>
+</div>
+</div>
+<div class="client-review-3">
+    <h4>Brendan Gage, Oakland, Ca</h4> 
+    <p>“These are the people I highly recommend. I needed some banners done in a hurry for my consultants. They do great work...and they're fast!” </p>
+</div>
+<div>
+    <marquee class="wrapper" behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();">
+        <a href="https://www.linkedin.com/in/vivekshaurya/" class="gap-between">Linkedin</a>
+        <a href="https://www.linkedin.com/in/vivekshaurya/" class="gap-between">Linkedin</a>
+        <a href="https://www.linkedin.com/in/vivekshaurya/" class="gap-between">Linkedin</a>
+        <a href="https://www.linkedin.com/in/vivekshaurya/" class="gap-between">Linkedin</a>
+        <a href="https://www.linkedin.com/in/vivekshaurya/" class="gap-between">Linkedin</a>
+        <a href="https://www.linkedin.com/in/vivekshaurya/" class="gap-between">Linkedin</a>
+            </marquee>
+</div>
+<div>
+    <h4 class="contact-us"> CONTACT US</h4>
+    <hr>
+</div>
+</div>
+<div class="lets-get-start-details">
+   <h4 class="heading">  Let's Get Started </h4>
+   <p class="bottom-latstag">Take the first step, and contact us to discuss your marketing and business goals. Send us a message, and we will get back to you soon.</p>
+</div>
+<div class="whatsapp-details">
+      <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=8050003793">
+        <i class="fab fa-whatsapp"></i> Message us on WhatsApp
+    </a>
+</div>
+<div class="last-div">
+    <h4 class="heading">OmniBuddies, Technology For Of & By The People</h4>
+    <p class="bottom-latstag">ClayWorks Create - Best Coworking Space In Bangalore, Bannerghatta Road, Create Campus, Arakere Bannerghatta Road, Omkar Nagar, Arekere, Bengaluru, Karnataka, India</p>
+</div>
+<div class="">
+<p class="heading"><a href="mailto:Info@omnibuddies.com" class="personal-details">Info@omnibuddies.com</a></p>
+<p class="heading"><a href="tel:+918050003793" class="personal-details">+91 8050003793</a></p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="google-map-container">
+<div class="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9405751122376!2d77.5962796737898!3d12.911540916194774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fd7ce65b81%3A0xf60f6a3ba19561e!2sCarveNiche%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1698218625454!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+<div class="about-who-weare">
+    <ul>
+   <li style="display: inline-block;"> <a href="#">TECH FOR OF BY PEOPLE</a></li>
+   <li style="display: inline-block;"> <a href="whoweare.html">WHO WE ARE</a></li>
+   <li style="display: inline-block;"> <a href="privacypolicy.html">Privacy Policy</a></li>
+</ul>
+<div>
+    <p class="omini-buddies">OmniBuddies Innovations</p>
+    <p class="copy-right">Copyright Omnibuddies Innovations © 2022 Technology Solutions, For Of & By The People - All Rights Reserved.</p>
+   </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript for form validation
+        const emailInput = document.getElementById("email");
+        const emailError = document.getElementById("email-error");
+        const subscribeForm = document.getElementById("subscription-form");
+        subscribeForm.addEventListener("submit", function (event) {
+            if (!validateEmail(emailInput.value)) {
+                emailError.textContent = "Please enter a valid email address.";
+                event.preventDefault(); // Prevent form submission
+            } else {
+                emailError.textContent = ""; // Clear error message
+            }
+        });
+
+        function validateEmail(email) {
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+<style> 
+ @media(min-width:1280px)
+ {
+    .Sub-body{
+        background-color:black;
+     width:100%;
+    }
+    .Sub-heading{
+        column-gap: 25px;
+        margin-left:130px;
+        margin-right:130px;
+background-color: black;
+    }
+}
+    .main-div{
+        background-color: #000000b5;
+    }
+    .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 850px; 
+    margin-top: 0.125rem;
+}
+.navbar-light .navbar-brand {
+    font-size: 16px;
+    font-family: Lato, arial, sans-serif;
+    color: #f9fafb;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #f9fafb;
+}
+   .nav-item{
+    margin-right:250px
+    }
+    .nav-item-dropdown{
+    padding-top: 30px;
+    }
+.x .c1-r {
+    position: relative;
+}
+.backgroung-body-1{
+
+}
+.navbar-light .navbar-brand {
+    color: #f9fafb;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #f9fafb;
+}
+.round-image {
+  border-radius: 50%; /* Makes the image round */
+  width: 350px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+}
+.details-of-who-we-are{
+    display: flex;
+    column-gap: 25px;
+}
+.name-tag{
+    font-family: Lato, arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: rgb(226, 226, 226);
+}
+#text {
+  display: none;
+}
+.navbar-main{
+    margin-left:100px;
+    margin-right:100px;
+}
+.div-header{
+    position: fixed;
+    background-color: #212529;
+    width:100%
+}
+.Sub-heading{
+    padding-top:150px;
+}
+a{
+    font-family: Lato, arial, sans-serif;
+    overflow-wrap: break-word;
+    color: rgb(226, 226, 226);
+    font-size: 16px;
+    text-decoration: none;
+}
+.details{
+    padding-top:60px;
+    margin-left:300px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+}
+.omini-buddies-bottom-content{
+    font-size:15px;
+    color: rgb(226, 226, 226);
+    font-family: Lato, arial, sans-serif;
+    padding-top:40px;
+    text-align: center;
+}
+.heading-tag{
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(226, 226, 226);
+    font-family: Lato, arial, sans-serif;
+}
+.paragraph-deatails{
+    font-size: 16px;
+    font-family: Lato, arial, sans-serif;
+    color: rgb(145, 145, 145);
+}
+.copy-right-tag{
+    text-align: center;
+    font-size: 12px;
+    font-family: Lato, arial, sans-serif;
+    color: rgb(226, 226, 226);
+}
+.show-more-button{
+    font-family: Lato, arial, sans-serif;
+    border-radius: 10px;
+    border-color: #ff00005e;
+}
+/* @media(max-width:550px){
+    .details{
+        margin-left:10px;
+        margin-right:400px;
+    padding-top:60px;
+    margin-left:300px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+}
+    .name-tag {
+     text-align: center;
+     margin-left:10px;
+        margin-right:400px;
+    }
+    .heading-tag{
+        margin-left:10px;
+        margin-right:400px;
+    }
+    .paragraph-deatails{
+        margin-left:10px;
+        margin-right:60%;
+    font-size: 16px;
+    font-family: Lato, arial, sans-serif;
+    color: rgb(145, 145, 145);
+}
+} */
+@media(max-width:768px){
+    .paragraph-deatails{
+    font-size: 16px;
+    font-family: Lato, arial, sans-serif;
+    color: rgb(145, 145, 145);
+}
+    .container-1{
+        width:100%;
+
+    }
+    .main-div{
+        background-color: #000000b5;
+    }
+    .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 850px; 
+    margin-top: 0.125rem;
+}
+ .navbar-main{
+    margin-left:100px;
+    margin-right:100px;
+}
+    .nav-item-dropdown {
+    padding-top: 30px;
+}
+    .div-header{
+    position: fixed;
+    background-color: #212529;
+    width:100%
+}
+    .details-of-who-we-are {
+        flex-direction: row;
+    display: flex;
+    column-gap: 25px;
+}
+    .Sub-body{
+        display: flex;
+        background-color:black;
+     width:fit-content;
+    }
+    .Sub-heading{
+        column-gap: 25px;
+        margin-left:130px;
+        margin-right:130px;
+background-color: black;
+    }
+}
+</style>
+</head>
+<body>  
+<div class="div-header">
+        <div data-ux="Block" class="navbar-main">
+        <nav class="navbar navbar-expand-lg navbar-light backgroung-body-1">
+            <a class="navbar-brand" href="index.html">TECH FOR OF BY PEOPLE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <img src="https://img1.wsimg.com/isteam/ip/ab77ab73-4824-4dd4-969e-51446b26185f/blob-19ecfc7.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:95" > </li>
+                    <li class="nav-item-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="peopleTechFocusDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            360° PEOPLE-TECH FOCUS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="peopleTechFocusDropdown">
+                            <a class="dropdown-item" href="#">WHO WE ARE</a>
+                            <a class="dropdown-item" href="#">PRODUCTS -FOR THE PEOPLE</a>
+                            <a class="dropdown-item" href="#">SERVICES-OF THE PEOPLE</a>
+                            <a class="dropdown-item" href="#">THE PEOPLE @ OMNIBUDDIES</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+   
+</div>
+</div>
+<div class="container-1">
+<div class="Sub-body">
+    <div class="Sub-heading">
+    <div>
+     <h2 class="heading-tag">WHO WE ARE : FOUNDERS & THE TEAM</h2>
+     <hr>
+    </div>
+    <div class="details-of-who-we-are" >
+        <div>
+        <img src="https://img1.wsimg.com/isteam/ip/ab77ab73-4824-4dd4-969e-51446b26185f/vivek%20self%20pic.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true" alt="Your Image" class="round-image">
+       <p class="name-tag">Vivek Shaurya</p>
+       <div class="text-container">
+        <div class="paragraph-deatails">
+          <p >A Restless Technologist  Vivek is fueled  by a desire to bring some positive improvement at mass scale using tech solution in areas hitherto not thought.</p> 
+          <p class="text"> He comes with expansive experience of building over 100 MUSD businesses and has done critical programs for Apple,Covcacola etc before he took beGalileo, his EdTech venture to be one of the most successful & innovative Edtech company globally.  He is a Physics graduate, a university rank holder, an MBA , and did is product design course from Indian Institute of Science Bangalore</p> 
+        </div>
+          <button class="show-more-button" onclick="toggleText(this)">Show More</button>
+      </div>
+    </div>
+        <div>
+            <img src="https://img1.wsimg.com/isteam/ip/ab77ab73-4824-4dd4-969e-51446b26185f/avneet%20pic%202.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true" alt="Your Image" class="round-image">
+       <p class="name-tag">Avneet Makkar</p>
+       <div class="text-container">
+        <div class="paragraph-deatails">
+        <p >A season Entrepreneur, Avneet Comes with a wealth of Experience pivoting businesses & designing product at scale & speed ,meeting market needs.</p>
+        <p class="text"> She comes with experience of marque global Initiatives done at UBS, SYSCO etc before she forayed to start beGalileo. She has been responsible for building a product that delivers unique learning outcome & has built an ecosystem that supports employment for over 20,000 teachers. She did her BTech from National Institute of Technology </p>
+        <button class="show-more-button" onclick="toggleText(this)">Show More</button>
+     </div>
+    </div>
+        </div>
+            <div>
+                <img src="https://img1.wsimg.com/isteam/stock/1075/:/cr=t:0%25,l:16.67%25,w:66.67%25,h:100%25/rs=w:365,h:365,cg:true" alt="Your Image" class="round-image">
+           <p class="name-tag">Vikas Shaurya</p>
+           <div class="paragraph-deatails">
+             <p>Vikas is a Data & Analytics enthusiast, A thorough bred techie who has had stint with Global Marque firms like Eli Lily, Call Mae & more. He did is B Tech in IT and masters from Kelly School of Business. </p>
+           </div>
+            </div>
+
+    </div>
+    <div class="details">
+        <div>
+        <a href="index.html">TECH FOR OF BY PEOPLE</a>
+        </div>
+        <div>
+        <a href="#">PEOPLEWHO WE ARE</a>
+        </div>
+        <div>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        </div>
+    </div>
+    <div>
+        <p class="omini-buddies-bottom-content">OmniBuddies Innovations</p>
+    </div>
+    <div>
+       <p class="copy-right-tag">Copyright Omnibuddies Innovations © 2022 Technology Solutions, For Of & By The People - All Rights Reserved.
+    </p> 
+    </div>
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function toggleText(button) {
+  var textContainer = button.parentElement;
+  var text = textContainer.querySelector(".text");
+
+  if (text.style.display === "none" || text.style.display === "") {
+    text.style.display = "block";
+    button.innerHTML = "Show Less";
+  } else {
+    text.style.display = "none";
+    button.innerHTML = "Show More ";
+  }
+}
+</script>
+</body>
+</html>
