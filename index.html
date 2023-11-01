@@ -8,8 +8,83 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-<style>
-        .hidden {
+    <style>
+@media(min-width: 1200px){
+.container{
+    max-width: 100%;
+}
+    }
+        .navbar-light .navbar-brand {
+            color: #f9fafb;
+}
+
+        .dropdown-item{
+            color: #fff;
+        }
+        .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+.dropdown-menu{
+    background-color: black;
+}
+
+.popup-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: fit-content;
+            height: auto;
+            row-gap: 15px;
+            position:fixed;
+            right:25px;
+            bottom: 15px;
+
+        }
+            .text-area-details{
+      height: 50px;
+    width: 300px;
+    }
+    .submit-details{
+      height: 35px;
+    width: 300px;
+    }
+    .text-area-details{
+        color:black;
+    }
+    .input-one{
+      height: 35px;
+    width: 300px;
+    }
+   .input-two{
+    height: 35px;
+    width: 300px;
+    }
+    .label-details{
+        margin-left:10px;
+      row-gap: 20px;
+    flex-direction: column;
+    display: flex;
+      color:black;
+      margin-top:20px;
+    }
+    .header-tag{
+      padding-right: 24px;
+      padding-left: 24px;
+      font-size:22px;
+    }
+    .main-div{
+      height: 50px;
+    width: 325px;
+    background-color: rgb(215, 223, 157);
+    }
+    #myForm{
+        max-height: 300px;
+        overflow-y: scroll;
+        background-color: white;
+    }
+    .hidden {
+        width:325px;
+          right: -1px;
       display: none;
     }
 
@@ -19,14 +94,18 @@
       padding: 10px 20px;
       border: none;
       cursor: pointer;
-      position: fixed;
-      top: 20px; /* Adjust the top and right values as needed */
-      right: 20px;
+     
     }
 
     #toggleButton.active {
       background-color: #e74c3c;
     }
+    .image-details{
+      border-radius: 50%; /* Makes the image round */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+    }
+
     .gap-between{
         color:blue;
         font-size:30px;
@@ -57,14 +136,18 @@ background-color: black;
         max-width: 100%;
         height: auto;
     }
+    .fab{
+        color:#25D366; 
+    }
     .whatsapp-details{
         text-align: center;
     }
             .whatsapp-link {
+                font-weight: 800;
                 box-sizing: inherit;
             display: inline-block;
-            background-color: #25D366; /* WhatsApp green */
-            color: #fff; /* Text color */
+            background-color: white;/* WhatsApp green */
+            color: black; /* Text color */
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
@@ -88,7 +171,8 @@ background-color: black;
 .navbar-light .navbar-brand {
     font-size: 16px;
     font-family: Lato, arial, sans-serif;
-    color: #f9fafb;
+    color:white;
+   
 }
 .navbar-light .navbar-nav .nav-link {
     color: #f9fafb;
@@ -99,7 +183,7 @@ background-color: black;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 40px;
+    margin-top: 217px;
   
 }
 .welcome-title{
@@ -292,8 +376,8 @@ h4{
     padding-top:25px;
 }
 .dropdown-menu[data-bs-popper] {
-    top: 100%;
-    left: 850px; 
+    top: 95%;
+    left: 75%; 
     margin-top: 0.125rem;
 }
 .heading{
@@ -375,6 +459,12 @@ a{
     border-radius: 5px;
 }
 @media(max-width:550px){
+    .navbar {
+    margin-left: -10px;
+    }
+    .navbar-brand{
+        margin-left:30px;
+    }
     .submit-button {
         color:white;
 width:300px;
@@ -393,6 +483,11 @@ background-color: black;
 }
 }
  @media(max-width:768px){
+    .navbar{
+    /* margin-left:-10px; */
+ 
+}
+
       .input-details{
     border-color: #d9cbcba1;
     color:white;
@@ -466,19 +561,30 @@ margin-left:-10px;
 .All-content-div{
      width:100%;
     }
+
+}
+.navbar{
+    margin-left:-10px;
+    position:fixed;
+    z-index: 1; 
+    width: 100%; 
+}
+.navbar-brand{
+    margin-left:130px;
+     color:white
+}
+.collapse{
+    margin-right: 100px;
 }
 </style>
 </head>
 <body>
-    <div class="main-block">
-        <div class="bg-video-width">
-            
     <div class="container">
         <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-b c1-c c1-12 c1-d c1-e c1-f c1-g">
             <video data-aid="HEADER_VIDEO" type="video/mp4" poster="https://img1.wsimg.com/isteam/videos/ka58Zo1" autoplay="" loop="" muted="" playsinline="" 
             style="width:100%;display:block;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);height:auto;min-height:100%;object-fit:cover" 
             src="https://categories.api.godaddy.com/v4/videos/raw/video/ka58Zo1"></video>
-        <nav class="navbar navbar-expand-lg navbar-light backgroung-body-1">
+        <nav class="navbar navbar-expand-lg navbar-light backgroung-body-1" >
             <a class="navbar-brand" href="#">TECH FOR OF BY PEOPLE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -486,7 +592,8 @@ margin-left:-10px;
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <img src="https://img1.wsimg.com/isteam/ip/ab77ab73-4824-4dd4-969e-51446b26185f/blob-19ecfc7.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:95" > </li>
+                        <img src="https://img1.wsimg.com/isteam/ip/ab77ab73-4824-4dd4-969e-51446b26185f/blob-19ecfc7.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:95" style="
+                        height: 80px" > </li>
                     <li class="nav-item-dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="peopleTechFocusDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             360° PEOPLE-TECH FOCUS
@@ -504,6 +611,10 @@ margin-left:-10px;
    
 </div>
 </div>
+    <div class="main-block">
+        <div class="bg-video-width">
+            
+    
 
 <div class="Welcome-div">
     <div class="contact-details">
@@ -611,7 +722,24 @@ margin-left:-10px;
     <h4 class="contact-us"> CONTACT US</h4>
     <hr>
 </div>
-</div>
+<div class="popup-block">
+    <div class="side-bar">
+    <form id="myForm" class="hidden">
+      <div class="main-div">
+        <h4 class="header-tag">Technology Solutions, For Of & By The People</h4>
+      </div>
+      <div class="label-details">
+      <input  class="input-one" type="text" id="name" for="name" value="Name" required></input>
+     
+      <input  class="input-two" type="email" id="email"  for "email" value="Email" required></input>  
+     <textarea class="text-area-details" value="How can We help You" style="color:black"></textarea>
+      <button class="submit-details" type="submit">Send</button>
+      <p style="width:323px">This site is protected by reCAPTCHA and the Google <a href="privacypolicy.html">Privacy Policy</a>Privacy Policy and Terms of Service apply.</p>
+      </div>
+    </form>
+  </div>
+    <button id="toggleButton"><img class="image-details" src="messages.png"></button>
+  </div>
 <div class="lets-get-start-details">
    <h4 class="heading">  Let's Get Started </h4>
    <p class="bottom-latstag">Take the first step, and contact us to discuss your marketing and business goals. Send us a message, and we will get back to you soon.</p>
@@ -635,8 +763,7 @@ margin-left:-10px;
 </div>
 <div class="google-map-container">
 <div class="google-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9405751122376!2d77.5962796737898!3d12.911540916194774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fd7ce65b81%3A0xf60f6a3ba19561e!2sCarveNiche%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1698218625454!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.329111321021!2d77.59351617378934!3d12.886546616739928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fd70e0bf11%3A0x52547bf77881cf1!2sbeGalileo%20-%20By%20Carveniche!5e0!3m2!1sen!2sin!4v1698738763757!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <div class="about-who-weare">
     <ul>
@@ -671,5 +798,33 @@ margin-left:-10px;
        
 
     </script>
+        <script>
+            const toggleButton = document.getElementById('toggleButton');
+            const myForm = document.getElementById('myForm');
+        
+            toggleButton.addEventListener('click', function() {
+              if (myForm.classList.contains('hidden')) {
+                myForm.classList.remove('hidden');
+                toggleButton.classList.add('active');
+                toggleButton.textContent = '(X)';
+              } else {
+                myForm.classList.add('hidden');
+                toggleButton.classList.remove('active');
+                toggleButton.textContent = 'Feedback';
+              }
+            });
+        
+            myForm.addEventListener('submit', function(event) {
+              event.preventDefault();
+              // Validation logic here
+              const name = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              if (name && email) {
+                alert('Form submitted successfully!');
+              } else {
+                alert('Please fill in all fields.');
+              }
+            });
+          </script>
 </body>
 </html>
