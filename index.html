@@ -9,7 +9,92 @@
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <style>
+ .client-image2{
+        width:100%;
+        height:300px;
+    }
+        .pop-up-image{
+        width:500px;
+        }
+        .Learn-more-button{
+    margin-left: 10px;
+    margin-top:15px;
+    background-color: rgb(0, 0, 0);
+            border:2px solid rgb(215, 223, 157);
+            border-radius: 3px;
+        }
+/* Styles for the pop-up card */
+.popup-card {
+            display: none; /* Initially hidden */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            background-color: white;
+            border: 1px solid #ccc;
+          
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .pop-up-image-container {
+            display: flex;
+            
+        }
+
+        .pop-up-image {
+            width: 100%;
+            height: auto;
+        }
+
+        #closeButton {
+            border-radius: 50%;
+            cursor: pointer;
+        }
+           /* Additional styles for the shrinking navbar */
+    .navbar-shrink{
+      transition: all 0.3s;
+      padding: 20px 0px 20px 0px; /* Adjust the padding as needed */
+    }
+    .navbar-shrink {
+      height: 50px; /* Adjust the height as needed */
+    }
+
+    .navbar-brand img {
+      max-height: 40px; /* Adjust the logo size as needed */
+      transition: all 0.3s;
+    }
+
+    .navbar-shrink .navbar-brand img {
+      max-height: 30px; /* Adjust the logo size when shrinking */
+    }
+
+    /* Your video styling */
+    video {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      height: auto;
+      min-height: 100%;
+      object-fit: cover;
+    }
+            .Linkedin-details{
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
 @media(min-width: 1200px){
+               /* Additional styles for the shrinking navbar */
+               .navbar-shrink {
+      transition: all 0.3s;
+      padding: 0px 0px 20px; /* Adjust the padding as needed */
+    }
+    .Linkedin-details{
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
 .container{
     max-width: 100%;
 }
@@ -68,6 +153,7 @@
       margin-top:20px;
     }
     .header-tag{
+        color:black;
       padding-right: 24px;
       padding-left: 24px;
       font-size:22px;
@@ -105,9 +191,41 @@
   width: 30px; /* Adjust the width as needed */
   height: 30px; /* Adjust the height as needed */
     }
-
+/* .wrapper{
+    background-color: #ddd;
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.wrapper a{
+    display: inline-block;
+  font-size: 20px;
+  position: relative;
+  left: 100%;
+  animation: marquee 8s linear infinite;
+}
+.wrapper a:nth-child(1) {
+  animation-delay: 0s;
+}
+.wrapper a:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.wrapper a:nth-child(3) {
+  animation-delay: 0.16s;
+}
+.wrapper a:nth-child(4) {
+  animation-delay: 0.24s;
+}
+.wrapper a:nth-child(5) {
+  animation-delay: 0.32s;
+}
+@keyframes marquee {
+  0%   { left: 100%; }
+  100% { left: -100%; }
+} */
     .gap-between{
-        color:blue;
+        color:rgb(215, 223, 157);
         font-size:30px;
         padding:20px;
     }
@@ -156,12 +274,8 @@ background-color: black;
         .whatsapp-link i {
             margin-right: 10px;
         }
-    .nav-item{
-    margin-right:250px
-    }
-    .nav-item-dropdown{
-    padding-top: 30px;
-    }
+   
+   
 .x .c1-r {
     position: relative;
 }
@@ -169,6 +283,8 @@ background-color: black;
     background-color: rgba(0, 0, 0, 0.25);
 }
 .navbar-light .navbar-brand {
+    margin-left:10%;
+
     font-size: 16px;
     font-family: Lato, arial, sans-serif;
     color:white;
@@ -400,7 +516,7 @@ h4{
     
 }
 a:link { 
-    color: rgb(226, 226, 226);
+    color: rgb(215, 223, 157);
     text-decoration: none; 
 }
 .google-map {
@@ -458,10 +574,9 @@ a{
     border-color: #fff;
     border-radius: 5px;
 }
-@media(max-width:550px){
-    .navbar {
-    margin-left: -10px;
-    }
+@media(max-width:375px){
+    
+ 
     .navbar-brand{
         margin-left:30px;
     }
@@ -483,9 +598,40 @@ background-color: black;
 }
 }
  @media(max-width:768px){
-    .navbar{
-    /* margin-left:-10px; */
- 
+    .client-image2{
+        width:100%;
+        height:250px;
+    }
+    .navbar-expand-lg .navbar-nav{
+        padding-left: 10px;
+        align-items: flex-start !important;
+    }
+    .pop-up-image-container {
+            display: flex;
+
+        }
+    .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+    .navbar-light .navbar-brand {
+    margin-left: 10px;
+    }
+    .popup-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
       .input-details{
@@ -518,9 +664,6 @@ width: 100%;
     background-color:black;
 padding: 0px 24px;
 }
- }  
-
- @media (max-width: 880px){
     .welcome-title{
         max-width: 100%;
         font-size: 37px !important;
@@ -564,18 +707,24 @@ margin-left:-10px;
 
 }
 .navbar{
-    margin-left:-10px;
     position:fixed;
     z-index: 1; 
+    left: 0px;
+    top: 0px;
     width: 100%; 
 }
-.navbar-brand{
+/* .navbar-brand{
     margin-left:130px;
      color:white
+} */
+
+.navbar-expand-lg .navbar-nav {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
 }
-.collapse{
-    margin-right: 100px;
-}
+
 </style>
 </head>
 <body>
@@ -583,17 +732,19 @@ margin-left:-10px;
         <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-4 c1-b c1-c c1-12 c1-d c1-e c1-f c1-g">
             <video data-aid="HEADER_VIDEO" type="video/mp4" poster="https://img1.wsimg.com/isteam/videos/ka58Zo1" autoplay="" loop="" muted="" playsinline="" 
             style="width:100%;display:block;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);height:auto;min-height:100%;object-fit:cover" 
-            src="https://categories.api.godaddy.com/v4/videos/raw/video/ka58Zo1"></video>
+            src="https://playzonetestingimage.s3.ap-south-1.amazonaws.com/ka58Zo1+%281%29.mp4"></video>
         <nav class="navbar navbar-expand-lg navbar-light backgroung-body-1" >
             <a class="navbar-brand" href="#">TECH FOR OF BY PEOPLE</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav">
+                   
                     <li class="nav-item">
-                        <img src="https://img1.wsimg.com/isteam/ip/ab77ab73-4824-4dd4-969e-51446b26185f/blob-19ecfc7.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:95" style="
-                        height: 80px" > </li>
+                        <img id="imageToChange" src="https://lh3.googleusercontent.com/chat_attachment/AFzxxOjndc87J6LXo-vOipdtubJWDlGtQpyLzaPzpGE0fQg6nd6iUJSbXFcbiZpVXFQW-I9njX34iEKTn-ZAr39bVHKzTTrnvmuN63RRvJMEA9LDNAQJNtUVVpJf7P9CRl1s9DZrume2Svs2J8VJCcLFt05v_cfnABfgfK-UuzRQ3uRu8pv1eQ-QjeBxeg1vHElXRZ9PO5PrriYHcmxAbqDaxWssj3lv79tUYyeT4lWcTwSBSXQKGNN0M6bmJlWhVe-JMxEtLUkiPt3tcg1vTdTaZ4ctnEhkOO8quxKn_EGlGvJhlnbNordqMMSPdRKf-g=w1366-h605" style="
+                        height: 80px;width:80px" > </li>
                     <li class="nav-item-dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="peopleTechFocusDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             360° PEOPLE-TECH FOCUS
@@ -633,7 +784,7 @@ margin-left:-10px;
     <div class="paragraph-0">
            
         <div class="paragraph-01">
-         <img src="https://img1.wsimg.com/isteam/stock/12141/:/rs=w:600,h:300,cg:true,m/cr=w:600,h:300"> 
+         <img src="https://playzonetestingimage.s3.ap-south-1.amazonaws.com/pencils.jpg"> 
          </div>
          <div class="paragraph-02">
         <h4 class="paragraph">Our Innovations</h4> 
@@ -683,7 +834,7 @@ margin-left:-10px;
 <div class="client-details">
     <h4>CLIENT REVIEWS</h4>
     <hr>
-    <img class="Client-image" src="https://img1.wsimg.com/isteam/stock/12141/:/rs=w:1240,h:620,cg:true,m/cr=w:1240,h:620">
+    <img class="Client-image" src="https://playzonetestingimage.s3.ap-south-1.amazonaws.com/pencils+two.jpg">
 </div>
 <div>
     <h4 class="client-review ">
@@ -694,7 +845,7 @@ margin-left:-10px;
     </p>
 </div>
 <div class="client-review-2">
-    <img src="https://img1.wsimg.com/isteam/stock/12338/:/rs=w:600,h:300,cg:true,m/cr=w:600,h:300">
+    <img class="client-image2" src="https://playzonetestingimage.s3.ap-south-1.amazonaws.com/Vikas+Sourya.jpg" >
     <div class="review-01">
     <h4>Suzanne Sher, Albany, New York</h4>
     <p style="margin:0">
@@ -708,8 +859,8 @@ margin-left:-10px;
     <h4>Brendan Gage, Oakland, Ca</h4> 
     <p>“These are the people I highly recommend. I needed some banners done in a hurry for my consultants. They do great work...and they're fast!” </p>
 </div>
-<div>
-    <marquee class="wrapper" behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();">
+<div class="Linkedin-details">
+    <marquee class="wrapper" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" >
         <a href="https://www.linkedin.com/in/vivekshaurya/" class="gap-between">Linkedin</a>
         <a href="https://www.linkedin.com/in/vivekshaurya/" class="gap-between">Linkedin</a>
         <a href="https://www.linkedin.com/in/vivekshaurya/" class="gap-between">Linkedin</a>
@@ -745,7 +896,7 @@ margin-left:-10px;
    <p class="bottom-latstag">Take the first step, and contact us to discuss your marketing and business goals. Send us a message, and we will get back to you soon.</p>
 </div>
 <div class="whatsapp-details">
-      <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=8050003793">
+      <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=8050003793" style="color: black;">
         <i class="fab fa-whatsapp"></i> Message us on WhatsApp
     </a>
 </div>
@@ -775,7 +926,21 @@ margin-left:-10px;
     <p class="omini-buddies">OmniBuddies Innovations</p>
     <p class="copy-right">Copyright Omnibuddies Innovations © 2022 Technology Solutions, For Of & By The People - All Rights Reserved.</p>
    </div>
-  </div>
+</div>
+    <!-- Pop-up card content -->
+    <div id="popupCard" class="popup-card">
+        <div class="pop-up-image-container">
+            <img class="pop-up-image" src="https://img1.wsimg.com/isteam/stock/1075/:/cr=t:15.91%25,l:0%25,w:100%25,h:68.18%25/rs=w:403,h:183,cg:true">
+            <button id="closeButton" style="
+            margin-left: -30px;
+            height: 25px;
+            width: 30px;">X</button>
+        </div>
+        <h4 style="color:#6d8114">Announcement</h4>
+        <span>Welcome! We are just kicking off, we promise to touch each and everyone of your lives in a positively impactful way. The wait will be worth it</span>
+        <br>
+        <button class="Learn-more-button" style="color:black"><a href="mailto:Info@omnibuddies.com">Learn More</a></button>
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // JavaScript for form validation
@@ -825,6 +990,47 @@ margin-left:-10px;
                 alert('Please fill in all fields.');
               }
             });
+    // JavaScript code for shrinking the navbar on scroll
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar');
+      var logo = document.getElementById('logo');
+      var imageToChange = document.getElementById('imageToChange');
+      if (window.scrollY > 100) {
+        navbar.classList.add('navbar-shrink');
+        logo.style.maxHeight = '30px';
+        imageToChange.style.height = '50px'; /* Adjust the height as needed */
+        imageToChange.style.width = '50px'; /* Adjust the width as needed */
+      } else {
+        navbar.classList.remove('navbar-shrink');
+        logo.style.maxHeight = '40px';
+        imageToChange.style.height = '80px'; /* Adjust the original height */
+        imageToChange.style.width = '80px'; /* Adjust the original width */
+      }
+    });
+         // JavaScript to show the pop-up and handle the close button
+         const popupCard = document.getElementById('popupCard');
+        const closeButton = document.getElementById('closeButton');
+
+        function showPopup() {
+            popupCard.style.display = 'block';
+        }
+
+        function hidePopup() {
+            popupCard.style.display = 'none';
+        }
+
+        // Show the pop-up immediately (on page load)
+        showPopup();
+
+        // Set up the interval to show the pop-up every 10 seconds
+        const popupInterval = 10000; // 10 seconds
+        setInterval(() => {
+            showPopup();
+        }, popupInterval);
+
+        // Close the pop-up when the close button is clicked
+        closeButton.addEventListener('click', hidePopup);
           </script>
+          
 </body>
 </html>
